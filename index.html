@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ballenitas Club</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* Fondo azul profundo */
+            background-color: #003366; 
+            /* Patrón de ballenitas creado con SVG para que no falle */
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cpath d='M90,40 Q95,35 95,25 Q95,20 85,25 Q75,30 60,30 Q30,30 10,50 Q5,65 20,70 Q40,75 60,70 Q85,60 90,40 Z' fill='%230055aa' fill-opacity='0.4'/%3E%3Ccircle cx='25' cy='45' r='2' fill='white' fill-opacity='0.2'/%3E%3C/svg%3E");
+            background-size: 150px 150px;
+            font-family: 'Arial Rounded MT Bold', 'Helvetica', sans-serif;
+            overflow: hidden;
+        }
+
+        .welcome-text {
+            /* Azul super clarito / Celeste */
+            color: #b3e5fc; 
+            font-size: 4rem;
+            font-weight: bold;
+            text-align: center;
+            letter-spacing: -1px;
+            /* Un pequeño resplandor para que se vea "soñador" */
+            text-shadow: 0 0 20px rgba(179, 229, 252, 0.5);
+            z-index: 10;
+        }
+
+        /* Animación opcional para que el fondo se mueva como el mar */
+        body {
+            animation: drift 20s linear infinite;
+        }
+
+        @keyframes drift {
+            from { background-position: 0 0; }
+            to { background-position: 300px 300px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-text">
+        welcome to ballenitasclub
+    </div>
+
+</body>
+</html>
